@@ -3,10 +3,6 @@
   let userRPS;
   
   
-  let computerRPS;
-  
-  let WinState;
-  
   userInput = $(".input").val();
   userRPS = "<p>" + userInput + "</p>";
   $(".userChoice").append(userRPS);
@@ -25,3 +21,28 @@ $(".play").click(function() {
   let computerInput = Math.random();
   computerInput = $(".computerChoice").text(`${computerInput}`);
 });
+
+//DAY 3 - Make computer choice to a string
+
+$(".play").click(function() {
+  let computerReply = Math.random();
+  let computerReplyString;
+
+  
+  if (computerReply <= 1) {
+    let computerReplyString = "paper";
+    
+  }
+  
+  else if (computerReply === 1) {
+   let computerReplyString = "rock";
+  }
+  
+    else {
+      let computerReplyString = "scissors";
+    }
+   
+  
+  
+});
+
